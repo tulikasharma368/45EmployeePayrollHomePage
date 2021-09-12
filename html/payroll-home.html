@@ -29,41 +29,13 @@
         <a href="/html/payroll-form.html" class="add-button"><img src="/assets/images/add-24px.svg" alt="">Add User</a>
       </div> <!-- header-content -->
       <div class="table-main"> 
-        <table id="display" class="table">
-          <!-- UC3 -->
-          <tr>
-            <th></th>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Department</th>
-            <th>Salary</th>
-            <th>Start Date</th>
-            <th>Actions</th>
-          </tr>
-          <tr>
-            <td>
-                <img class="profile" src="/assets/profie-images/Ellipse -2.png" alt="">
-            </td>
-            <td>naman</td>
-            <td>male</td>
-            <td>
-                <div class="dept-label">Sales</div>
-                <div class="dept-label">Engineer</div>
-            </td>
-            <td>9000000</td>
-            <td>3 jan 2021</td>
-            <td>
-                <img id="1" onclick="remove(this)"
-                    src="/assets/images/delete-black-18dp.svg"
-                    alt="delete">
-                <img id="1" onclick="update(this)"
-                    src="/assets/images/create-black-18dp.svg" alt="edit">
-            </td>
-        </tr>
+        <table id="table-display" class="table">
+          <!-- HTML in new-home.js(Template literal feature ES6) -->
         </table>
       </div> <!-- table-main -->
-      
     </div> <!-- main-content -->
-    
+    <script src="/js/new-home.js"></script>
+    <script src="/js/site-properties.js"></script>
+    <script src="/js/utility.js"></script>
   </body>
 </html>
