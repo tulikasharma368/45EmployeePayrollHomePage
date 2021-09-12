@@ -72,16 +72,17 @@ const getInputValueById = (id) => {
 //local storage
 function createAndUpdateStorage(employeePayrollData){
     let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
-
     if(employeePayrollList != undefined){
         employeePayrollList.push(employeePayrollData);
+        
     }else{
         employeePayrollList = [employeePayrollData];
     }
     alert(employeePayrollList.toString());
-    localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList));
+    localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList));   
 }
-
+//clear local storage:
+//window.localStorage.clear();
 //reset form
 const resetForm = () => {
     debugger;
